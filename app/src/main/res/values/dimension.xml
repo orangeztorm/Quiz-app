@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Padding for the content in the cardview-->
+    <dimen name="cardview_content_padding">10dp</dimen>
+    <!-- corner radius for cardview -->
+    <dimen name="card_radius">6dp</dimen>
+    <!-- margin for cardview -->
+    <dimen name="card_margin">10dp</dimen>
+    <!-- cardview elevation -->
+    <dimen name="card_elevation">10dp</dimen>
+
+    <!-- size for the text questions -->
+    <dimen name="text_size_questions">16sp</dimen>
+
+    <!-- size for the answers -->
+    <dimen name="choices_text_size">16sp</dimen>
+
+
+</resources>

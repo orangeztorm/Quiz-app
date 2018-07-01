@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Andriod Quiz</string>
+
+    <!-- question 1 words-->
+    <string name="question1">1. What is AAPT?</string>
+    <!-- choices for question 1 -->
+    <string name="question1_choice1">  Android Asset Packaging Tool.</string>
+    <string name="question1_choice2">  Android Asset Package Tool.</string>
+    <string name="question1_choice3">  Android Asset Packing Tool.</string>
+
+    <!-- question 2 -->
+    <string name="question_2">2. What is ADB?</string>
+
+    <!-- question 3 -->
+    <string name="question_3">3. What are the different states wherein a process is based?</string>
+    <!-- choices for question 3 -->
+    <string name="question3_choice1"> Foreground activity</string>
+    <string name="question3_choice2"> Visible activity</string>
+    <string name="question3_choice3"> Background activity</string>
+    <string name="question3_choice4"> Empty process</string>
+
+    <!-- question 4 -->
+    <string name="question_4">4. What is ANR?</string>
+
+    <!-- question 5 -->
+    <string name="question_5">5. This ia an?</string>
+    <!-- choices for question 5 -->
+    <string name="question5_choice1">Android Boit</string>
+    <string name="question5_choice2">Andriod Bot</string>
+    <string name="question5_choice3">Android Bot</string>
+
+    <!-- question 6 -->
+    <string name="question_6">6. Photo sharing app. user receives new photo and a notification is created and the user clicks on the notification.
+        What do you attach to the notification to open the app and show the user the photo?</string>
+    <!-- choices for question 6 -->
+    <string name="question6_choice1"> Intent</string>
+    <string name="question6_choice2"> PhotoIntent</string>
+    <string name="question6_choice3"> Service</string>
+
+    <!-- question 7 -->
+    <string name="question_7">7. What are the three key loops when monitoring an activity</string>
+    <!-- choices for question 7 -->
+    <string name="question7_choice1"> Entire lifetime – activity happens between onCreate and onDestroy</string>
+    <string name="question7_choice2">Visible lifetime – activity happens between onStart and onStop</string>
+    <string name="question7_choice3"> Foreground lifetime – activity happens between onResume and onPause</string>
+</resources>

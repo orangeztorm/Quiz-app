@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background_color"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"/>
+
+        <!-- A CardView that contains a TextView and a radio group -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/card_margin"
+            card_view:cardCornerRadius="@dimen/card_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/cardview_content_padding"
+            card_view:cardBackgroundColor="@color/card_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question1"
+                    android:textColor="@color/question_color"
+                    android:textSize="@dimen/text_size_questions"
+                    android:textStyle="bold" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/question1_choice1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question1_choice1"
+                        android:textSize="@dimen/choices_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RadioButton
+                        android:id="@+id/question1_choice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question1_choice2"
+                        android:textSize="@dimen/choices_text_size"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RadioButton
+                        android:id="@+id/question1_choice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question1_choice3"
+                        android:textSize="@dimen/choices_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- A CardView that contains a TextView and an edittext -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/card_margin"
+            card_view:cardCornerRadius="@dimen/card_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/cardview_content_padding"
+            card_view:cardBackgroundColor="@color/card_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2"
+                    android:textColor="@color/question_color"
+                    android:textSize="@dimen/text_size_questions"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/question2_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- A CardView that contains a TextView and 4 checkbox -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/card_margin"
+            card_view:cardCornerRadius="@dimen/card_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/cardview_content_padding"
+            card_view:cardBackgroundColor="@color/card_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_3"
+                    android:textColor="@color/question_color"
+                    android:textSize="@dimen/text_size_questions"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/question3_choice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question3_choice1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <CheckBox
+                    android:id="@+id/question3_choice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question3_choice2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <CheckBox
+                    android:id="@+id/question3_choice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question3_choice3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <CheckBox
+                    android:id="@+id/question3_choice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question3_choice4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- A CardView that contains a TextView and an -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/card_margin"
+            card_view:cardCornerRadius="@dimen/card_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/cardview_content_padding"
+            card_view:cardBackgroundColor="@color/card_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_4"
+                    android:textColor="@color/question_color"
+                    android:textSize="@dimen/text_size_questions"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/question4_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- A CardView that contains a TextView and an imageview and a radiogroup-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/card_margin"
+            card_view:cardCornerRadius="@dimen/card_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/cardview_content_padding"
+            card_view:cardBackgroundColor="@color/card_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_5"
+                    android:textColor="@color/question_color"
+                    android:textSize="@dimen/text_size_questions"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/andrroid_1" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/question5_choice1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question5_choice1"
+                        android:textSize="@dimen/choices_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RadioButton
+                        android:id="@+id/question5_choice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question5_choice2"
+                        android:textSize="@dimen/choices_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RadioButton
+                        android:id="@+id/question5_choice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question5_choice3"
+                        android:textSize="@dimen/choices_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- A CardView that contains a TextView and an imageview and a radiogroup-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/card_margin"
+            card_view:cardCornerRadius="@dimen/card_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/cardview_content_padding"
+            card_view:cardBackgroundColor="@color/card_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_6"
+                    android:textColor="@color/question_color"
+                    android:textSize="@dimen/text_size_questions"
+                    android:textStyle="bold" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/question6_choice1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question6_choice1"
+                        android:textSize="@dimen/choices_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RadioButton
+                        android:id="@+id/question6_choice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question6_choice2"
+                        android:textSize="@dimen/choices_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                    <RadioButton
+                        android:id="@+id/question6_choice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question6_choice3"
+                        android:textSize="@dimen/choices_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- A CardView that contains a TextView and an imageview and 3 checkboxes-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/card_margin"
+            card_view:cardCornerRadius="@dimen/card_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/cardview_content_padding"
+            card_view:cardBackgroundColor="@color/card_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_7"
+                    android:textColor="@color/question_color"
+                    android:textSize="@dimen/text_size_questions"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/question7_choice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question7_choice1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <CheckBox
+                    android:id="@+id/question7_choice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question7_choice2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <CheckBox
+                    android:id="@+id/question7_choice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question7_choice3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- A CardView that contains a TextView and an imageview and 3 checkboxes-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/card_margin"
+            card_view:cardCornerRadius="@dimen/card_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/cardview_content_padding"
+            card_view:cardBackgroundColor="@color/card_color">
+
+            <Button
+                android:id="@+id/submit_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="@dimen/text_size_questions"
+                android:textStyle="bold"
+                android:onClick="text_score"/>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
